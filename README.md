@@ -16,23 +16,8 @@ Objective: discover why FY-24 sales (USD 1.27 M) trail the 2.16 M target and pro
   5. Publish interactive dashboard & share insights.
 
 ---
-## 2  Repository Structure
 
-├── Data/
-│   └── messy_superstore_dataset.xlsx
-│   └── cleaned_superstore_dataset.csv
-├── Notebooks/
-│   ├── Superstore_pipeline.ipynb
-├── Powerbi/
-│   └── Dashboard.pbix
-│   └── DAX Measures.txt
-├── Images/
-│   └── dashboard_screenshots.png
-├── requirements.txt
-└── README.md  ← (you are here)
----
-
-## 3  Business Questions & Answers
+## 2  Business Questions & Answers
 
 | # | Question | Insight |
 |---|-----------|---------|
@@ -43,7 +28,7 @@ Objective: discover why FY-24 sales (USD 1.27 M) trail the 2.16 M target and pro
 | 5 | Month-over-month revenue trend? | Peak 120 k in May → dip 80 k in Jun (FY-24) |
 
 ---
-## 4  Key Findings & Action Plan
+## 3  Key Findings & Action Plan
 
 - Maharashtra + Madhya Pradesh ≈ 57 % of profit – replicate their playbook in lagging regions.
 - Technology (Computers & Phones) = one-third of revenue – double inventory & promo budgets.
@@ -52,13 +37,13 @@ Objective: discover why FY-24 sales (USD 1.27 M) trail the 2.16 M target and pro
 - Embed Sales-vs-Target KPI in quarterly bonus calculations to accelerate accountability.
 
 ---
-## 5  Visualization
+## 4  Visualization
 
 [Dashboard Screenshot](images/dashboard_screenshot.png)
 A 5-page Power BI report
 
 ---
-## 6  Requirements
+## 5  Requirements
 
 Core libraries:
 - pandas · numpy · matplotlib · seaborn
@@ -66,7 +51,7 @@ Core libraries:
 
 ---
 
-## 7 📩 Connect With Me
+## 6 📩 Connect With Me
 - [LinkedIn](https://www.linkedin.com/in/mayank-bisht-322051234/)
 - [Email](mayankbisht9891@gmail.com)
 - #DataAnalytics #BusinessAnalyst #Portfolio
