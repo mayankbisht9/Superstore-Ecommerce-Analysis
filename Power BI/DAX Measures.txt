@@ -1,0 +1,81 @@
+DAX Measures Used in the Project
+
+1. Total Sales
+
+Code snippet :-
+
+Total Sales = SUM(Orders[Sales])
+This measure calculates the sum of all values in the Sales column from the Orders table to get the total revenue.
+
+2. Total Profit
+
+Code snippet :-
+
+Total Profit = SUM(Orders[Profit])
+This measure calculates the sum of all values in the Profit column from the Orders table to determine the overall profit.
+
+3. Profit Margin
+
+Code snippet :-
+
+Profit Margin = DIVIDE([Total Profit], [Total Sales])
+This calculates the profit margin by dividing the Total Profit by the Total Sales. Using DIVIDE is a safe way to handle potential division-by-zero errors.
+
+4. Total Orders
+
+Code snippet :-
+
+Total Orders = DISTINCTCOUNT(Orders[Order ID])
+This counts the number of unique orders placed by counting the distinct values in the Order ID column.
+
+5. Avg. Discount :-
+
+Code snippet
+
+Avg. Discount = AVERAGE(Orders[Discount])
+This measure calculates the average discount applied across all orders by averaging the Discount column.
+
+6. Total Customers
+
+Code snippet :-
+
+Total Customers = DISTINCTCOUNT(Customers[Customer ID])
+This counts the total number of unique customers by counting the distinct values in the Customer ID column.
+
+7. Total Products :-
+
+Code snippet
+
+Total Products = DISTINCTCOUNT(Products[Product ID])
+This counts the total number of unique products available by counting the distinct values in the Product ID column.
+
+8. Target Analysis DAX Measures
+Total Target
+
+Code snippet :-
+
+Total Target = SUM(Targets[Target])
+This measure calculates the overall sales target by summing all the values in the Target column from the Targets table.
+
+9. Target Achieved %
+
+Code snippet :-
+
+Target Achieved % = DIVIDE([Total Sales], [Total Target])
+This measure calculates the percentage of the sales target that has been met by dividing the Total Sales by the Total Target.
+
+10. Performance
+
+Code snippet :-
+
+Performance = 
+VAR Achievement = [Target Achieved %]
+RETURN
+    SWITCH(
+        TRUE(),
+        Achievement >= 1, "Excellent",
+        Achievement >= 0.95, "Good",
+        Achievement >= 0.85, "Fair",
+        "Needs Improvement"
+    )
+This measure uses a SWITCH function to assign a performance category based on the Target Achieved %. It returns a text label like "Excellent" or "Good" depending on how much of the target was met, which is useful for KPI indicators.
