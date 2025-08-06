@@ -6,7 +6,7 @@ Objective: discover why FY-24 sales (USD 1.27 M) trail the 2.16 M target and pro
 
 ---
 ## 1  Project Roadmap
-- **Data**   `superstore_dataset.xlsx` (6 sheets, 9 K order lines).
+- **Data**   `messy_superstore_dataset.xlsx` (6 sheets, 9 K order lines).
 - **Stack**  Python (pandas, seaborn, matplotlib) · Power BI · Excel.
 - **Workflow**  
   1. Ingest & clean raw Excel in Python, Performed detailed EDA.  
@@ -38,8 +38,14 @@ Objective: discover why FY-24 sales (USD 1.27 M) trail the 2.16 M target and pro
 
 ---
 ## 4  Visualization
+Check out the interactive dashboard highlights:
 
-[Dashboard Screenshot](images/dashboard_screenshot.png)
+![Executive Summary](Images/first page.png)
+![Product Analysis](Images/second page.png)
+![Customer Analysis](Images/third page.png)
+![Operational Analysis](Images/fourth page.png)
+![Performance Trackinng](Images/fifth page.png)
+
 A 5-page Power BI report
 
 ---
