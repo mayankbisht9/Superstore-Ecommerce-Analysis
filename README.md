@@ -40,7 +40,7 @@ Objective: discover why FY-24 sales (USD 1.27 M) trail the 2.16 M target and pro
 ## 4  Visualization
 Check out the interactive dashboard highlights:
 
-![Executive Summary](Images/first_page.png)
+![Executive Summary](Images/first.png)
 ![Product Analysis](Images/second_page.png)
 ![Customer Analysis](Images/third_page.png)
 ![Operational Analysis](Images/fourth_page.png)
